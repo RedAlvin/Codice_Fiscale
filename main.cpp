@@ -27,11 +27,11 @@ int main(){
 	for(int i=0; i<lungn; i++) //Verifica correzione
 		cout<<nome.at(i);
 	
-    cout<<endl<<endl;
+    	cout<<endl<<endl;
 		
 	
     
-    cout <<"Inserisci il tuo cognome: ";
+    	cout <<"Inserisci il tuo cognome: ";
 	getline (cin, cognome);
 	cout <<"Stringa letta = "<<cognome<<endl;
     
@@ -48,24 +48,24 @@ int main(){
 	cout<<endl<<endl;
 	
 	
-    for(int i=0; i<lungc && ncodice<3; i++){ //Assegnazione codice cognome
+    	for(int i=0; i<lungc && ncodice<3; i++){ //Assegnazione codice cognome
          if(cognome.at(i)!='A' && cognome.at(i)!='E' && cognome.at(i)!='I' && cognome.at(i)!='O' && cognome.at(i)!='U' && cognome.at(i)!=' '){
             codice=coice+cognome.at(i);
             cout<<codice.at(j);
             j++;
             ncodice++;}
             }
-    ncodice=0;
+    	ncodice=0;
          
          
-    for(int i=0; i<lungc && ncodice<3; i++){ //Assegnazione codice nome
+    	for(int i=0; i<lungc && ncodice<3; i++){ //Assegnazione codice nome
          if(nome.at(i)!='A' && nome.at(i)!='E' && nome.at(i)!='I' && nome.at(i)!='O' && nome.at(i)!='U' && nome.at(i)!=' '){
             codice=codice+nome.at(i);
             cout<<codice.at(j);
             j++;
             ncodice++;}
          }
-    ncodice=0;
+    	ncodice=0;
         
 	
 	system("PAUSE");
