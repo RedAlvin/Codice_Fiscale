@@ -47,6 +47,17 @@ int main(){
 		
 	cout<<endl<<endl;
 	
+	cout <<"Inserisci il tuo sesso(M/F): ";
+	getline (cin, sesso);
+	cout <<"Stringa letta = "<<sesso<<endl;
+	
+	for(int i=0; i<3; i++) //Correzione minuscole
+		if(sesso.at(i)>=97 && sesso.at(i)<=122)
+			sesso.at(i)=sesso.at(i)-32;
+
+    	cout<<sesso;
+		
+	cout<<endl<<endl;
 	
     	for(int i=0; i<lungc && ncodice<3; i++){ //Assegnazione codice cognome
          if(cognome.at(i)!='A' && cognome.at(i)!='E' && cognome.at(i)!='I' && cognome.at(i)!='O' && cognome.at(i)!='U' && cognome.at(i)!=' '){
